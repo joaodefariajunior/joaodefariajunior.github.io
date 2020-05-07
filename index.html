@@ -1,11 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="port.css">
+  <script src="port.js" defer></script>
+  <title>Document</title>
 </head>
+
 <body>
-    <h1>new project</h1>
-</body>
+ 
+  <div class="background">
+    <div class="banner">
+      <h2 class="quotes">Be like water making its way through cracks.</h2>
+      <h2 class="quotes">Do not be assertive, but adjust to the object, and you shall find a way around or through it.
+      </h2>
+      <h2 class="quotes">If nothing within you stays rigid, outward things will disclose themselves.</h2>
+      <h2 class="quotes">Empty your mind, be formless. Shapeless, like water.</h2>
+      <h2 class="quotes">If you put water into a cup, it becomes the cup.</h2>
+      <h2 class="quotes">You put water into a bottle and it becomes the bottle.</h2>
+      <h2 class="quotes">You put it in a teapot, it becomes the teapot.</h2>
+      <h2 class="quotes">Now, water can flow or it can crash.</h2>
+      <h2 class="quotes">Be water, my friend.</h2>
+  </div>
+  </div>
+  
+<div id="openModal" class="modalDialog">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+
+    <p >Mobile version under construction!</p>
+
+  </div>
+</div>
+ 
+  <nav class="navbar navbar-expand-lg navbar-dark primary-color" id="navbar">
+    <a class="navbar-brand" id ="name" href="#">Joao de Faria Junior</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id='nav-projects' href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id='nav-about'href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id='nav-contact' href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section class="animation">
+    <p>Hello World! Welcome to my page !</p>
+    <p></p>
+  </section>
+
+  <section id="about" class="me">
+    <h1>About me </h1> <section class="nemesis">
+      <p>I was born in Brazil, worked in different fields such as foreign trade, financial ,logistics.
+        Always with a passion for programming, and now I finally found my way to my passion !</p>
+        <img id="terno" src="/portfolio/terno.png" alt="profile">
+    </section> 
+     <section class="soft"> <h1>Soft skills</h1>
+      <h3>Teamwork</h3>
+      <h3>Comumunication Skills</h3>
+      <h3>Positive Attitude</h3>
+      <h3>Work Ethic</h3>
+      <h3>Willingness to learn</h3>
+      <h3>Tolerance of change and uncertainty</h3>
+    </section>
+    
+    
+   
+    <h1> A few of technologies that I work with :</h1>
+    <img src="/portfolio/javascript_logo.png" height="200px"alt="js">
+    <img src="/portfolio/html.png" height="200px" alt="html">
+    <img src="/portfolio/node.png" height="200px"alt="nodejs">
+    <img src="/portfolio/css.jpg" height="200px"alt="css">
+    <img src="/portfolio/bootstrap.png" height="200px"alt="bootstrap">
+    <img src="/portfolio/git.png" height="200px"alt="git">
+
+  </section>
+  <section id="projects">
+    <h1>Projects</h1>
+    <P>A little bit of what I can do .</P>
+    <a href="https://joaodefariajunior.github.io/Tic-Tac-Toe/"><img alt="tictac" src="/tictac.png" width="410"
+        height="410"></a>
+    <a href="https://joaodefariajunior.github.io/thedeadsouthquiz/"><img alt="deadsouth" src="/deadsouth.png"
+        width="410" height="410"></a>
+    <a href="https://joaodefariajunior.github.io/montypython/"><img alt="montypython" src="/monty.png" width="410"
+        height="410"></a>
+  </section>
+
+  <section class="wrapper" id='contact'>
+    <form action="https://formspree.io/mnqgavrj" method="POST">
+      <div class="field">
+        <div class="field">
+          <input type="text" id="name" name="name" placeholder="Who are you?" autofocus />
+          <label for="name">Name</label>
+        </div>
+        <div class="field">
+          <input type="text" id="email" name="email" placeholder="name@domain.tld" />
+          <label for="email">E-Mail</label>
+        </div>
+        <div class="field">
+          <textarea id="msg" rows="4" name="msg" placeholder="You message..."></textarea>
+          <label for="msg">Message </label>
+        </div>
+        <input class="button" type="submit" value="Send" />
+
+  </section>
+  
+  <footer>
+    <a href="https://www.linkedin.com/in/joao-de-faria-jr-04b3a5174/"><img
+        alt="linkedin" src="linkedin_001.png"></a> <a
+      href="https://github.com/joaodefariajunior/"><img alt="github"
+        src="/icons8-github-64.png"></a>
+        <p>Joao de Faria Junior &reg;</p>
+  </footer>
+
 </html>

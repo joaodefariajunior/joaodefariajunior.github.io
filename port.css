@@ -1,0 +1,318 @@
+* {
+    box-sizing: border-box;
+    color: #fff;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana,
+        "sans-serif";
+}
+
+
+
+.banner {
+    height: 30vh;
+    text-align: center;
+    line-height: 25vh;
+    text-shadow: white 1px 1px 1px ;
+    font-size: 25px;
+  
+}
+
+
+html,
+body {
+    background: #190061;
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: 0;
+}
+
+.wrapper {
+    margin: 100px auto 0;
+    width: 70%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 100%;
+    margin: 0;
+}
+
+form * {
+    font-size: 20px;
+    letter-spacing: 0.075em;
+    font-weight: 300;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+form .field {
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+form .field label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #b13e8b, #372056);
+    width: 100%;
+    height: 64px;
+    transition: width 333ms ease-in-out;
+    text-align: center;
+    padding: 18px 0;
+}
+
+form .field input[type="text"],
+form .field textarea {
+    border: none;
+    width: 100%;
+    height: 64px;
+    margin: 0;
+    padding-left: 19.5%;
+    color: #313a3d;
+}
+
+form #msg {
+    height: 64px;
+    resize: none;
+    transition: all 333ms ease-in-out;
+    padding-top: 18px;
+}
+
+form textarea:focus#msg,
+form textarea:not(:placeholder-shown)#msg {
+    height: 166px;
+}
+
+form input[type="text"]:focus+label,
+form input[type="text"]:not(:placeholder-shown)+label,
+form textarea:focus+label,
+form textarea:not(:placeholder-shown)+label,
+form .field:hover label {
+    width: 18%;
+}
+
+form input[type="submit"] {
+    background: linear-gradient(90deg, #b13e8b, #812d65);
+    -webkit-appearance: none;
+    border: none;
+    position: relative;
+    padding: 13px 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+form input[type="submit"]:hover,
+form input[type="submit"]:focus {
+    background: #372056;
+}
+
+#projects,
+#contact {
+    display: none;
+    text-align: center;
+    margin-bottom:10vh;
+    overflow:hidden;
+}
+
+
+
+
+img {
+    padding: 5px;
+    border-radius: 5%;
+    overflow:hidden;
+}
+
+footer{height:12vh;
+    background-color: black;
+    text-align: center;
+    opacity: 0.5;
+    position:sticky;
+    width:100vw;
+    
+   
+}
+footer>p {
+    text-align: center;
+    font-size: 1.2em;
+    
+}
+#terno{
+    
+        -webkit-filter: grayscale(100%); 
+        filter: grayscale(100%);
+        height:400px;
+        margin-top:5vh;
+
+}
+#about{
+    margin: 10vh 0 10vh 0;
+    text-align: center;
+   
+    
+}
+#about>p{
+    font-size: large;
+    text-shadow: 1px 1px 1px ;
+}
+#navbar{
+    font-size:30px;
+    padding-left:15px;
+}
+h1{padding:25px;}
+
+.soft{
+    background-color:black;
+    opacity: 0.4;
+    width:50vw;
+    height:40vh;
+    border-radius:10%;
+    display: inline-block;
+    margin-top:-25vh;
+    border-bottom:10%;
+    overflow:hidden;
+
+}
+
+.nemesis{ 
+    display: inline-block;
+     width:65vw;
+    height:90vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+
+}
+#name{
+    font-size:1em;
+    font-weight: bold;
+    text-shadow: 1px 1px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+.animation{
+  padding: 40px;
+  background-color: #121212;  
+  height:90vh;
+}
+
+.animation>p {
+  border-right: solid 3px rgba(0,255,0,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 3em;
+  color: rgba(255,255,255,.70);
+  margin:0 auto;
+  
+ 
+  
+}
+
+/* Animation */
+.animation>p {
+  animation: animated-text 4s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+             
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 950px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
+}
+
+.me{display:none;}
+#projects>p{
+    font-size:2em;
+    font-weight: bold;
+}
+
+
+
+  .banner {
+    background-image: url(/portfolio/rio.jpg);
+    height: 300px;
+    background-size: cover;
+}
+.quotes {
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    vertical-align: middle;
+    line-height: 300px;
+    display: none;
+    text-shadow: 1px 1px 1px;
+}
+
+.modalDialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+  .modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modalDialog > div {
+    width: 500px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: #372056;
+    height:300px;
+  }
+  .close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+  }
+  .close:hover {
+    background: #00d9ff;
+  }
+
+  .modalDialog>div>p{
+      font-size:2em;
+      color:white;
+      text-align: center;
+      margin-top:20%;
+      font-weight: bold;
+
+  }
