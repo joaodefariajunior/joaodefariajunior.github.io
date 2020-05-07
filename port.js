@@ -61,5 +61,3 @@ function myAbout() {
   }
 }
 me.addEventListener('click', myAbout)
-
-

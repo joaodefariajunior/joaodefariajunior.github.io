@@ -258,16 +258,17 @@ h1 {
 
 .me {
     display: none;
-    
+
 }
-.me>img{
-    margin:1vh;
+
+.me>img {
+    margin: 1vh;
 }
 
 #projects>p {
     font-size: 2em;
     font-weight: bold;
-    margin:1vh;
+    margin: 1vh;
 }
 
 
@@ -350,20 +351,32 @@ h1 {
 
 }
 
-@media only screen and (min-width: 900px) and (max-width: 1400px) and (orientation : landscape) {
-  
-    .quotes {
-      
-      font-size: 1em;
-      
-  }footer {
-    height: 20vh;
-  } .soft{
-      margin:5vh;
-      height:400px;
-  } .me>img{
-      margin:1vh;
-  }
+@media only screen and (min-width: 600px) {
+    .modalDialog>div {
+        display: none ;
+    }
+}
 
+@media only screen and (min-width: 900px) and (max-width: 1400px) and (orientation : landscape) {
+
+    .quotes {
+
+        font-size: 1em;
 
     }
+
+    footer {
+        height: 20vh;
+    }
+
+    .soft {
+        margin: 5vh;
+        height: 400px;
+    }
+
+    .me>img {
+        margin: 1vh;
+    }
+
+
+}
