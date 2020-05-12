@@ -408,8 +408,9 @@ h1 {
     } #terno {
         margin:0 auto;
         border:none;
-        margin-left:-12%;
-    } .soft{
+        margin-left:-11%;
+    } 
+    .soft{
        width:40vh;
        margin-top:-10vh;
     }.soft>h3{
