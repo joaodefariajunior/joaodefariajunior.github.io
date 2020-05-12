@@ -12,11 +12,11 @@
   showNextQuote();
 })();
 
-function openPopup() {
-  window.location.hash = 'openModal';
-}
+// function openPopup() {
+//   window.location.hash = 'openModal';
+// }
 
-window.onload = openPopup;
+// window.onload = openPopup;
 
 
 let wrapper = document.querySelector('#contact');
