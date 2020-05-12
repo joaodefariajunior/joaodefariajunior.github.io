@@ -388,48 +388,75 @@ h1 {
         padding: 0;
         word-wrap: break-word;
         line-height: 70px;
-            margin: -5px 0 -30px 0;
-    padding: 10px 2px 0 2px;
+        margin: -5px 0 -30px 0;
+        padding: 10px 2px 0 2px;
 
-    } .banner{
-        height:200px;
-    } .animation>p{
+    }
+
+    .banner {
+        height: 200px;
+    }
+
+    .animation>p {
         font-size: 1em;
-        
-    } #name{
-        font-size:1em;
-    } #navbarNav{display:block;
+
+    }
+
+    #name {
+        font-size: 1em;
+    }
+
+    #navbarNav {
+        display: block;
         text-align: center;
 
-    } .animation{
-        height:60%;
-    }.footer{
-        height:10%;
-    } #terno {
-        
-        border:none;
-        margin-left:-16%;
-    } 
-    .soft{
-       width:40vh;
-       margin-top:-20vh;
-    }.soft>h3{
-        font-size:0.8em;
-    } .image{
-        width:350px;
-        display:block;
-        margin:0 auto;
-    }h1{font-weight: bold;
+    }
+
+    .animation {
+        height: 60%;
+    }
+
+    .footer {
+        height: 10%;
+    }
+
+    #terno {
+
+        border: none;
+        margin-left: -36%;
+    }
+
+    .soft {
+        width: 40vh;
+        margin-top: -10vh;
+    }
+
+    .soft>h3 {
+        font-size: 0.8em;
+    }
+
+    .image {
+        width: 350px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-weight: bold;
         font-size: 1.5em;
 
-        
-    } #projects>p{
-        font-size:1em;
+
     }
-    .portfolio>img{
-        width:150px;
+
+    #projects>p {
+        font-size: 1em;
     }
-    footer{
-        height:15vh;
+
+    .portfolio>img {
+        width: 150px;
+    }
+
+    footer {
+        height: 15vh;
     }
 }
